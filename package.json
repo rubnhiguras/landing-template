@@ -2,9 +2,12 @@
   "name": "Rhaßolutions-landing",
   "private": true,
   "version": "1.0.0",
+  "homepage": "https://github.com/rubnhiguras/landing-template",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "lucide-react": "^1.17.0",
@@ -13,7 +16,9 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.5.0",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.15",
     "tailwindcss": "^3.4.19"
   }
+
 }
